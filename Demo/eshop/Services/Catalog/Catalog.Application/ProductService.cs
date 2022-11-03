@@ -15,7 +15,7 @@ namespace Catalog.Application
 
         public void ChangeProductPrice(ChangeProductPriceRequest changeProductPriceRequest)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public IEnumerable<ProductDisplayResponse> GetAllProducts()
