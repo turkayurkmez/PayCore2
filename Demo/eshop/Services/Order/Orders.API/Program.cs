@@ -1,4 +1,5 @@
 using MassTransit;
+using MediatR;
 using MessageBus;
 using Orders.API.Consumers;
 
@@ -10,6 +11,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddMediatR(typeof(Program));
 
 builder.Services.AddMassTransit(configure =>
 {

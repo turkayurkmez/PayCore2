@@ -1,6 +1,9 @@
 ﻿using MassTransit;
+using MediatR;
 using MessageBus;
 using Microsoft.AspNetCore.Mvc;
+using Orders.API.Commands;
+using Orders.API.Handlers;
 using Orders.API.Models;
 
 namespace Orders.API.Controllers
@@ -10,16 +13,27 @@ namespace Orders.API.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IPublishEndpoint publishEndpoint;
+        private readonly IMediator _mediator;
 
-        public OrdersController(IPublishEndpoint publishEndpoint)
+        public OrdersController(IPublishEndpoint publishEndpoint, IMediator mediator)
         {
             this.publishEndpoint = publishEndpoint;
+            _mediator = mediator;
         }
 
         [HttpPost]
         public IActionResult CreateOrder(Order order)
         {
             order.OrderState = OrderState.Pending;
+
+            //1. Komutu kim çalıştıracak?
+           // OrdersCommandHandler commandHandler = new OrdersCommandHandler();
+            //2. Hangi komutu çalıştıracak?
+            var command = new CreateOrder { CustomerId = order.CustomerId, CreatedDate = DateTime.Now, TotalPrice = 1200 };
+
+            //commandHandler.Handle(command);
+            _mediator.Send(command);
+
             //db'ye order Pending olarak yazılır.
             //ardından event fırlatılır.
             publishEndpoint.Publish(new OrderCreatedEvent
