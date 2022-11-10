@@ -3,8 +3,8 @@ using MediatR;
 using MessageBus;
 using Microsoft.AspNetCore.Mvc;
 using Orders.API.Commands;
-using Orders.API.Handlers;
 using Orders.API.Models;
+using Orders.API.Queries;
 
 namespace Orders.API.Controllers
 {
@@ -21,13 +21,22 @@ namespace Orders.API.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet("{customerId}")]
+        public async Task<IActionResult> GetOrders(int customerId)
+        {
+            var request = new GetOrders { CustomerId = customerId };
+            var orders = await _mediator.Send(request);
+            return Ok(orders);
+
+        }
+
         [HttpPost]
         public IActionResult CreateOrder(Order order)
         {
             order.OrderState = OrderState.Pending;
 
             //1. Komutu kim çalıştıracak?
-           // OrdersCommandHandler commandHandler = new OrdersCommandHandler();
+            // OrdersCommandHandler commandHandler = new OrdersCommandHandler();
             //2. Hangi komutu çalıştıracak?
             var command = new CreateOrder { CustomerId = order.CustomerId, CreatedDate = DateTime.Now, TotalPrice = 1200 };
 

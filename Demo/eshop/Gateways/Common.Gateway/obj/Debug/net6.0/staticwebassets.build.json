@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JJCXrH039VTMcwsSRbVzYJihtclHt/lxUQC2hiPj8bo=",
+  "Source": "Common.Gateway",
+  "BasePath": "_content/Common.Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

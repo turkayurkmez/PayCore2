@@ -8,6 +8,9 @@ C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\O
 C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\MassTransit.dll
 C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\MassTransit.Abstractions.dll
 C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\MediatR.dll
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\RabbitMQ.Client.dll
 C:\Users\turka\source\repos\Kurumsal\PayCore\Group 2\Demo\eshop\Services\Order\Orders.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
