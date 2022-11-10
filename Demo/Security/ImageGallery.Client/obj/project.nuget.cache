@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "kIAWAKc5lV6D2MCUcJXfLbgBNv3RacctNCjWTcwadOMye87H1vZmeYyeoXrW6mU45gU0QFX+9Dk11/aW9Qq4eA==",
+  "dgSpecHash": "zA5S6zwc3walrvKz2iUwpOyyhjK7rURqIDjSPcUQzjtIcXkxK2SSV0emPmPDJzxFYVDuyJlfmdgHoKgVkrDLjA==",
   "success": true,
   "projectFilePath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\PayCore\\Group 2\\Demo\\Security\\ImageGallery.Client\\ImageGallery.Client.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\turka\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\identitymodel.aspnetcore\\4.3.0\\identitymodel.aspnetcore.4.3.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.11\\microsoft.aspnetcore.authentication.openidconnect.6.0.11.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
